@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <EditText
+            android:id="@+id/editTextName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter name" />
+
+        <EditText
+            android:id="@+id/editTextPrice"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/editTextName"
+            android:hint="Enter price" />
+
+        <LinearLayout
+            android:id="@+id/layoutCheckBox"
+            android:layout_width="fill_parent"
+            android:layout_height="95dp"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:orientation="horizontal">
+
+                <CheckBox
+                    android:id="@+id/addressUpdate"
+                    android:layout_width="120dp"
+                    android:layout_height="30dp"
+                    android:text="Address" />
+
+                <CheckBox
+                    android:id="@+id/phoneUpdate"
+                    android:layout_width="130dp"
+                    android:layout_height="30dp"
+                    android:text="Phone number" />
+
+                <CheckBox
+                    android:id="@+id/firstNameUpdate"
+                    android:layout_width="130dp"
+                    android:layout_height="30dp"
+                    android:text="first name" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:orientation="horizontal">
+
+                <CheckBox
+                    android:id="@+id/lastNameUpdate"
+                    android:layout_width="120dp"
+                    android:layout_height="30dp"
+                    android:checked="false"
+                    android:text="last name" />
+
+                <CheckBox
+                    android:id="@+id/birthUpdate"
+                    android:layout_width="130dp"
+                    android:layout_height="30dp"
+                    android:checked="false"
+                    android:text="date of birth" />
+
+                <CheckBox
+                    android:id="@+id/licenceUpdate"
+                    android:layout_width="130dp"
+                    android:layout_height="30dp"
+                    android:checked="false"
+                    android:text="licence type" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:orientation="horizontal">
+
+                <CheckBox
+                    android:id="@+id/emailXUpdate"
+                    android:layout_width="120dp"
+                    android:layout_height="30dp"
+                    android:checked="false"
+                    android:text="email" />
+
+                <CheckBox
+                    android:id="@+id/dateUpdate"
+                    android:layout_width="130dp"
+                    android:layout_height="30dp"
+                    android:checked="false"
+                    android:text="date" />
+
+                <CheckBox
+                    android:id="@+id/timeUpdate"
+                    android:layout_width="130dp"
+                    android:layout_height="30dp"
+                    android:checked="false"
+                    android:text="time" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/buttonUpdateProduct"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Update" />
+
+            <Button
+                android:id="@+id/buttonDeleteProduct"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Delete" />
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

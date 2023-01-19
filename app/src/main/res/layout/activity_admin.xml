@@ -1,0 +1,218 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".AdminActivity">
+
+    <Button
+        android:id="@+id/manageAccounts"
+        android:layout_width="103dp"
+        android:layout_height="44dp"
+        android:text="Manage accounts"
+        android:textSize="10dp"
+        app:layout_constraintEnd_toStartOf="@+id/logOutBtnAdmin"
+        app:layout_constraintHorizontal_bias="0.883"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Welcome Admin"
+        android:textColor="@color/purple_700"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.052"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_marginTop="50dp"
+        android:layout_marginBottom="10dp"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="34dp" />
+
+        <EditText
+            android:id="@+id/editTextName"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="@color/teal_700"
+            android:backgroundTint="#B3B2B3"
+            android:ems="10"
+            android:gravity="center"
+            android:hint="Service name"
+            android:inputType="textPersonName"
+            android:minHeight="48dp" />
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+
+        <EditText
+            android:id="@+id/editTextPrice"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="5dp"
+            android:background="#B5B5B6"
+            android:ems="10"
+            android:gravity="center"
+            android:hint="Service price"
+            android:inputType="textPersonName"
+            android:minHeight="48dp" />
+
+
+        <LinearLayout
+            android:id="@+id/layoutCheckBox"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <CheckBox
+                    android:id="@+id/address"
+                    android:layout_width="140dp"
+                    android:layout_height="30dp"
+                    android:checked="false"
+                    android:text="Address" />
+
+                <CheckBox
+                    android:id="@+id/phone"
+                    android:layout_width="140dp"
+                    android:layout_height="30dp"
+                    android:checked="false"
+                    android:text="Phone number" />
+
+                <CheckBox
+                    android:id="@+id/firstName"
+                    android:layout_width="140dp"
+                    android:layout_height="30dp"
+                    android:checked="false"
+                    android:text="first name" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <CheckBox
+                    android:id="@+id/lastName"
+                    android:layout_width="140dp"
+                    android:layout_height="30dp"
+                    android:checked="false"
+                    android:text="last name" />
+
+                <CheckBox
+                    android:id="@+id/birth"
+                    android:layout_width="140dp"
+                    android:layout_height="30dp"
+                    android:checked="false"
+                    android:text="date of birth" />
+
+                <CheckBox
+                    android:id="@+id/licence"
+                    android:layout_width="140dp"
+                    android:layout_height="30dp"
+                    android:checked="false"
+                    android:text="licence type" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <CheckBox
+                    android:id="@+id/emailX"
+                    android:layout_width="140dp"
+                    android:layout_height="30dp"
+                    android:checked="false"
+                    android:text="email" />
+
+                <CheckBox
+                    android:id="@+id/date"
+                    android:layout_width="140dp"
+                    android:layout_height="30dp"
+                    android:checked="false"
+                    android:text="date" />
+
+                <CheckBox
+                    android:id="@+id/time"
+                    android:layout_width="140dp"
+                    android:layout_height="30dp"
+                    android:checked="false"
+                    android:text="time" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <Button
+            android:id="@+id/addButton"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="5dp"
+            android:background="@color/teal_200"
+            android:gravity="center"
+            android:text="Add service"
+            android:textColor="@android:color/black" />
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="49dp" />
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:text="Services Available(Press and Hold to Edit)"
+            android:textColor="@color/black"
+            android:textFontWeight="@integer/material_motion_duration_long_1"
+            android:textSize="20dp" />
+
+        <ListView
+            android:id="@+id/listViewServices"
+            android:layout_marginBottom="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/logOutBtnAdmin"
+        android:layout_width="95dp"
+        android:layout_height="44dp"
+        android:text="Logout"
+        android:textSize="12dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.949"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>
